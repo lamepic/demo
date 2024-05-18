@@ -1,0 +1,10 @@
+name: Demo pipeline
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  echo: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "We are starting"
